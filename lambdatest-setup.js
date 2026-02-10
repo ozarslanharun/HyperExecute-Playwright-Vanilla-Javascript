@@ -6,6 +6,7 @@ const { chromium } = require('playwright')
 const capabilities = {
   'browserName': 'Chrome', // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
   'browserVersion': 'latest',
+  'video': true,
   'LT:Options': {
     'platform': process.env.HYPEREXECUTE_PLATFORM,
     'build': 'Playwright HyperExecute Build',
